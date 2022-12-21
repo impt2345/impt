@@ -1,0 +1,107 @@
+.container {
+  width: 100%;
+  margin-top: 80px;
+  padding: 20px 0;
+  @media screen and (max-width: 700px) {
+    padding: 0;
+  }
+  background-color: var(--grey);
+  color: var(--dark);
+  .banner_container {
+    display: flex;
+    gap: 10px;
+    max-width: var(--app-max-width);
+    margin: auto;
+    .instruction {
+      //   border: 2px solid white;
+      width: 50%;
+    }
+    .bannerContainer {
+      width: 50%;
+      .logo_style {
+        width: 100%;
+        object-fit: cover;
+        @media screen and (max-width: 850px) {
+          object-fit: contain;
+        }
+      }
+      @media screen and (max-width: 850px) {
+        width: 100%;
+      }
+    }
+    .instruction {
+      width: 50%;
+      //   border: 2px solid red;
+      @media screen and (max-width: 850px) {
+        width: 100%;
+        display: flex;
+        margin: 0 10px;
+        font-size: 12px;
+        justify-content: space-between;
+        letter-spacing: 1.5px;
+      }
+      @media screen and (max-width: 700px) {
+        font-size: 10px;
+      }
+      @media screen and (max-width: 600px) {
+        flex-direction: column;
+      }
+      h2 {
+        text-transform: uppercase;
+        @media screen and (max-width: 850px) {
+          font-size: 16px;
+        }
+        padding: 10px 0;
+        .h2Icon {
+          margin-right: 10px;
+        }
+        color: var(--primary);
+      }
+      .specialOffer,
+      .transaction {
+        @media screen and (max-width: 600px) {
+          width: 100%;
+          display: block;
+          font-size: 12px;
+          letter-spacing: 2px;
+        }
+        padding: 10px 20px;
+        // border: 2px solid red;
+        box-shadow: 0px 0px 9px 0px rgba(11, 194, 63, 0.5);
+        li {
+          list-style: none;
+          padding: 5px 0;
+          //   border: 2px solid red;
+          .liGift {
+            color: var(--primary);
+            margin-right: 10px;
+            margin-left: 5px;
+          }
+          .h2Icon {
+            color: var(--primary);
+            margin-right: 10px;
+            margin-left: 5px;
+            font-weight: bolder;
+          }
+          span {
+            color: var(--dark);
+          }
+        }
+      }
+      .transaction {
+        margin-top: 15px;
+        @media screen and (max-width: 850px) {
+          margin-top: 0px;
+        }
+      }
+    }
+    // .logoContainer {
+    //   width: 200px;
+    //   height: 200px;
+    // }
+    @media screen and (max-width: 850px) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "impt",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "13.0.7",
+    "dayjs": "^1.11.7",
+    "framer-motion": "^7.10.2",
+    "next": "13.0.7",
+    "react": "18.2.0",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
+    "react-loader-spinner": "^5.3.4",
+    "react-spinners": "^0.13.7",
+    "react-toastify": "^9.1.1",
+    "sass": "^1.56.2"
+  }
+}
